@@ -1,0 +1,189 @@
+/* 
+
+# FONT FACES
+    - graphikMedium
+    - graphikRegular
+    - theinhardt
+    - tiemmposHeadline
+
+# 
+    - #2B2C2E
+    - #9FA2A7
+    - #27282A
+    - #848689
+    - #3D3E41
+    - #fff
+*/
+@font-face {
+    font-family: graphikMedium;
+    src: url(../fonts/Graphik-Medium.ttf);
+}
+@font-face {
+    font-family: graphikRegular;
+    src: url(../fonts/Graphik-Regular.woff);
+}
+@font-face {
+    font-family: theinhardt;
+    src: url(../fonts/Theinhardt-Lt.woff);
+}
+@font-face {
+    font-family: tiemposHeadline;
+    src: url(../fonts/TiemposHeadline-Semibold.woff);
+}
+
+:root {
+    --graphikMedium: graphikMedium;
+    --graphikRegular: graphikRegular;
+    --theinhardt: theinhardt;
+    --tiemposHeadline: tiemposHeadline;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STYLES FÜR DIE NAVIGATIONBAR */
+
+nav {
+    display: flex;
+    height: 7vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-anchor-wrap {
+    margin-left: 8em;
+}
+
+.navigation-anchor-wrap .navigation-anchor-wrap__anchor:not(:first-child) {
+    padding-left: 10px;
+}
+
+.navigation-anchor-wrap .navigation-anchor-wrap__anchor {
+    font-family: var(--graphikRegular);
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #27282A;
+    transition: color 0.15s ease-in-out;
+}
+
+.navigation-anchor-wrap .navigation-anchor-wrap__anchor:hover {
+    color: #848689;
+}
+
+.header__design-critique-logo {
+    font-family: var(--tiemposHeadline);
+    font-size: 1.4rem;
+    margin-inline: auto;
+    color: #27282A;
+}
+
+.header__get-started-button {
+    border: 2px solid #27282A;
+    color: #27282A;
+    text-decoration: none;
+    padding: 5px 40px;
+    margin-right: 10em;
+    font-size: 0.9em;
+    font-family: var(--graphikMedium);
+}
+
+.header__get-started-button:hover {
+    background-color: #27282A;
+    color: #fff;
+}
+/* STYLE FÜR DIE FRONTPAGE DER WEBSITE */
+
+.heading-article {
+    height: 20vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family: var(--graphikRegular);
+    font-size: 1.6rem;
+}
+
+.heading-article h1 {
+    margin-bottom: 10px;
+}
+
+.background-img-article {
+    background-image: url(../img/home_hero.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 73vh;
+}
+
+/* Um links und rechts einen festen Abstand zu erzeugen, wird eine feste Breite von 1400px für alle Sections nach der Frontpage gesetzt */
+
+.dollars-section,
+.deliverables-section,
+.how-it-works-section,
+.critique-section,
+.percent-section,
+.get-in-touch-section {
+    width: 1400px;
+    padding: 0 100px;
+}
+
+/* STYLE FÜR DIE ZWEITE SECTION DER PAGE */
+
+.dollars-section {
+    display: flex;
+    margin-top: 120px;
+}
+
+.dollars-section .dollars-section__article-paragraph {
+    font-family: var(--graphikMedium);
+    font-size: 1.2em;
+    line-height: 29px;
+    width: 60%;
+    margin-right: 60px;
+}
+
+.dollars-section__article {
+    width: 200px;
+}
+
+.dollars-section .dollars-section__article__unit-dollar {
+    font-family: var(--theinhardt);
+    font-weight: 600;
+    font-size: 3.2em;
+}
+
+.dollars-section .dollars-section__article__unit-dollar-subtext {
+    font-family: var(--theinhardt);
+    font-size: 1.2em;
+    color: #848689;
+    line-height: 18px;
+}
+
+/* STYLES FÜR DIE DRITTE SEITE DER PAGE */
+
+.deliverables-section_article-img {
+    background-image: url(../img/home_deliverables.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 100%;
+    height: 1000px;
+    margin-right: 100px;
+}
+
+.deliverables-section {
+    display: flex;
+    margin-top: 120px;
+    width: 1400px;
+}
+
+.deliverables-section .deliverables-section_article__h2 {
+    font-family: var(--tiemposHeadline);
+    font-size: 3.2em;
+    margin-bottom: 50px;
+}
