@@ -98,7 +98,7 @@ nav {
     color: #fff;
 }
 
-.header__toggle-dark-mode {
+#header__toggle-dark-mode {
     margin-right: 100px;
     color: #27282A;
     transition: color 0.15s ease-in-out;
