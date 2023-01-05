@@ -18,14 +18,17 @@
     font-family: graphikMedium;
     src: url(../fonts/Graphik-Medium.ttf);
 }
+
 @font-face {
     font-family: graphikRegular;
     src: url(../fonts/Graphik-Regular.woff);
 }
+
 @font-face {
     font-family: theinhardt;
     src: url(../fonts/Theinhardt-Lt.woff);
 }
+
 @font-face {
     font-family: tiemposHeadline;
     src: url(../fonts/TiemposHeadline-Semibold.woff);
@@ -36,8 +39,6 @@
     --graphikRegular: graphikRegular;
     --theinhardt: theinhardt;
     --tiemposHeadline: tiemposHeadline;
-
-
 }
 
 * {
@@ -96,6 +97,17 @@ nav {
     background-color: #27282A;
     color: #fff;
 }
+
+.header__toggle-dark-mode {
+    margin-right: 100px;
+    color: #27282A;
+    transition: color 0.15s ease-in-out;
+}
+
+.header__toggle-dark-mode:hover {
+    color: #848689;
+}
+
 /* STYLE FÜR DIE FRONTPAGE DER WEBSITE */
 
 .heading-article {
@@ -127,8 +139,8 @@ nav {
 .critique-section,
 .percent-section,
 .get-in-touch-section {
-    width: 1400px;
-    padding: 0 100px;
+    width: 1200px;
+    margin-inline: auto;
 }
 
 /* STYLE FÜR DIE ZWEITE SECTION DER PAGE */
@@ -165,25 +177,197 @@ nav {
 
 /* STYLES FÜR DIE DRITTE SEITE DER PAGE */
 
-.deliverables-section_article-img {
-    background-image: url(../img/home_deliverables.png);
-    background-size: contain;
-    background-repeat: no-repeat;
 
-    width: 100%;
-    height: 100%;
-    height: 1000px;
-    margin-right: 100px;
+.deliverables-section_article-img img {
+    width: 500px;
 }
 
 .deliverables-section {
     display: flex;
-    margin-top: 120px;
-    width: 1400px;
+    margin-top: 150px;
+}
+
+.deliverables-section_article {
+    width: 45%;
+    margin-left: auto;
 }
 
 .deliverables-section .deliverables-section_article__h2 {
     font-family: var(--tiemposHeadline);
     font-size: 3.2em;
     margin-bottom: 50px;
+}
+
+.deliverables-section .deliverables-section_article__h3 {
+    font-family: var(--graphikMedium);
+    margin-block: 20px;
+    font-size: 1.2em;
+}
+
+.deliverables-section .deliverables-section_article__p {
+    font-family: var(--theinhardt);
+    font-size: 1.2;
+    line-height: 22px;
+}
+
+.how-it-works-section {
+    display: flex;
+    margin-top: 150px;
+    background-color: #f1f1f4;
+}
+
+.how-it-works-section__article-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%
+}
+
+.how-it-works-section__article-img img {
+    width: 500px;
+    height: 500px;
+
+}
+
+.how-it-works-section__article__h2 {
+    font-family: var(--tiemposHeadline);
+    font-size: 3.2em;
+    margin-bottom: 15px;
+}
+
+.how-it-works-section__article_ol,
+.how-it-works-section__article_p {
+    font-family: var(--theinhardt);
+    font-size: 1em;
+    line-height: 22px;
+    color: #848689;
+    font-weight: 600;
+}
+
+.how-it-works-section__article {
+    width: 60%;
+    padding: 60px;
+}
+
+.how-it-works-section__article__ol {
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.how-it-works-section__article__ol-li {
+    font-family: var(--theinhardt);
+    margin-left: 50px;
+    color: #848689;
+    font-weight: 600;
+}
+
+.critique-section__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px
+}
+
+.critique-section__article__h2 {
+    font-family: var(--tiemposHeadline);
+    font-size: 3.2em;
+    margin-bottom: 25px;
+}
+
+.critique-section__article__p {
+    font-family: var(--theinhardt);
+    font-weight: 600;
+    line-height: 30px;
+    width: 50%;
+    color: #9FA2A7;
+}
+
+.percent-section {
+    display: flex;
+    border-bottom: 1px solid #27282A;
+}
+
+.percent-section img {
+    margin-block: -5% 80px;
+    width: 620px;
+}
+
+.percent-section__p {
+    padding-left: 180px;
+    font-family: var(--tiemposHeadline);
+    line-height: 35px;
+    color: #9FA2A7;
+}
+
+.img-28 {
+    margin-top: 120px;
+    margin-bottom: -20px;
+}
+
+.get-in-touch-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.get-in-touch-section_h2 {
+    font-family: var(--tiemposHeadline);
+    font-size: 3em;
+}
+
+.get-in-touch-section_flex-row {
+    display: flex;
+    justify-content: center;
+    margin-block: 50px 50px;
+}
+
+.get-in-touch-section_flex-row img {
+    width: 130px;
+}
+
+.get-in-touch-section_flex-row p {
+    margin-top: auto;
+    font-family: var(--graphikRegular);
+}
+
+.get-in-touch-section_flex-row a {
+    font-family: var(--tiemposHeadline);
+}
+
+.get-in-touch-section_flex-row a {
+    font-family: var(--graphikMedium);
+    text-decoration: none;
+    color: #27282A;
+}
+
+@media screen and (max-width: 1400px) {
+    .dollars-section,
+    .deliverables-section,
+    .how-it-works-section,
+    .critique-section,
+    .percent-section,
+    .get-in-touch-section { 
+        width: 1000px;
+     }
+}
+
+@media screen and (max-width: 1000px) {
+    .dollars-section,
+    .deliverables-section,
+    .how-it-works-section,
+    .critique-section,
+    .percent-section,
+    .get-in-touch-section { 
+        width: 768px;
+        flex-direction: column;
+        align-items: center;
+     }
+     .dollars-section__article-paragraph {  margin-right: 0;
+                                            text-align: center;
+                                            margin-block-end: 50px;}
+     .deliverables-section_article { margin-left: 0;}
+     .img-28 {margin-inline: auto;}
 }
