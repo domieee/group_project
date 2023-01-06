@@ -49,6 +49,9 @@
 
 /* STYLES FÜR DIE NAVIGATIONBAR */
 
+body {
+    max-width: 1900px;
+}
 nav {
     display: flex;
     height: 7vh;
@@ -87,6 +90,7 @@ nav {
     border: 2px solid #27282A;
     color: #27282A;
     text-decoration: none;
+    text-align: center;
     padding: 5px 40px;
     margin-right: 10em;
     font-size: 0.9em;
@@ -104,7 +108,7 @@ nav {
     transition: color 0.15s ease-in-out;
 }
 
-.header__toggle-dark-mode:hover {
+#header__toggle-dark-mode:hover {
     color: #848689;
 }
 
@@ -117,11 +121,10 @@ nav {
     justify-content: center;
     font-family: var(--graphikRegular);
     font-size: 1.6rem;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.heading-article h1 {
-    margin-bottom: 10px;
-}
 
 .background-img-article {
     background-image: url(../img/home_hero.png);
@@ -141,6 +144,14 @@ nav {
 .get-in-touch-section {
     width: 1200px;
     margin-inline: auto;
+}
+
+.deliverables-section_article__h2,
+.how-it-works-section__article__h2,
+.critique-section__article__h2,
+.get-in-touch-section_h2 {
+    font-family: var(--tiemposHeadline);
+    font-size: 3.2em;
 }
 
 /* STYLE FÜR DIE ZWEITE SECTION DER PAGE */
@@ -193,8 +204,6 @@ nav {
 }
 
 .deliverables-section .deliverables-section_article__h2 {
-    font-family: var(--tiemposHeadline);
-    font-size: 3.2em;
     margin-bottom: 50px;
 }
 
@@ -230,8 +239,6 @@ nav {
 }
 
 .how-it-works-section__article__h2 {
-    font-family: var(--tiemposHeadline);
-    font-size: 3.2em;
     margin-bottom: 15px;
 }
 
@@ -271,8 +278,6 @@ nav {
 }
 
 .critique-section__article__h2 {
-    font-family: var(--tiemposHeadline);
-    font-size: 3.2em;
     margin-bottom: 25px;
 }
 
@@ -313,11 +318,6 @@ nav {
     margin-top: 120px;
 }
 
-.get-in-touch-section_h2 {
-    font-family: var(--tiemposHeadline);
-    font-size: 3em;
-}
-
 .get-in-touch-section_flex-row {
     display: flex;
     justify-content: center;
@@ -343,7 +343,7 @@ nav {
     color: #27282A;
 }
 
-@media screen and (max-width: 1400px) {
+@media  (max-width: 1200px) {
     .dollars-section,
     .deliverables-section,
     .how-it-works-section,
@@ -354,20 +354,55 @@ nav {
      }
 }
 
-@media screen and (max-width: 1000px) {
+@media  (max-width: 1024px) {
     .dollars-section,
     .deliverables-section,
     .how-it-works-section,
     .critique-section,
     .percent-section,
     .get-in-touch-section { 
-        width: 768px;
-        flex-direction: column;
+        width: 900px;
         align-items: center;
-     }
+    }
      .dollars-section__article-paragraph {  margin-right: 0;
                                             text-align: center;
                                             margin-block-end: 50px;}
-     .deliverables-section_article { margin-left: 0;}
-     .img-28 {margin-inline: auto;}
+     .deliverables-section_article { margin-left: 40px; width: 40%;}
+
+    .how-it-works-section__article-img img,
+    .deliverables-section_article-img img {
+        width: 370px;
+        height: auto;
+    }
+
+
 }
+
+@media  (max-width: 768px) {
+    .dollars-section,
+    .deliverables-section,
+    .how-it-works-section,
+    .critique-section,
+    .percent-section,
+    .get-in-touch-section { 
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+    }
+
+    .dollars-section {margin-top: 0}
+    .heading-article {height: 17vh;}
+    .background-img-article {height: 50vh; margin-bottom: px;}
+}
+
+/* 
+# H2
+    - deliverables-section_article__h2
+    - how-it-works-section__article__h2
+    - critique-section__article__h2
+    - get-in-touch-section_h2
+
+*/
