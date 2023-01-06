@@ -14,6 +14,7 @@
     - #3D3E41
     - #fff
 */
+
 @font-face {
     font-family: graphikMedium;
     src: url(../fonts/Graphik-Medium.ttf);
@@ -52,6 +53,7 @@
 body {
     max-width: 1900px;
 }
+
 nav {
     display: flex;
     height: 7vh;
@@ -125,7 +127,6 @@ nav {
     text-align: center;
 }
 
-
 .background-img-article {
     background-image: url(../img/home_hero.png);
     background-size: contain;
@@ -187,7 +188,6 @@ nav {
 }
 
 /* STYLES FÜR DIE DRITTE SEITE DER PAGE */
-
 
 .deliverables-section_article-img img {
     width: 500px;
@@ -374,8 +374,6 @@ nav {
         width: 370px;
         height: auto;
     }
-
-
 }
 
 @media  (max-width: 768px) {
@@ -397,12 +395,3 @@ nav {
     .heading-article {height: 17vh;}
     .background-img-article {height: 50vh; margin-bottom: px;}
 }
-
-/* 
-# H2
-    - deliverables-section_article__h2
-    - how-it-works-section__article__h2
-    - critique-section__article__h2
-    - get-in-touch-section_h2
-
-*/

@@ -1,5 +1,5 @@
 let toggleDarkModeButton = document.getElementById("header__toggle-dark-mode");
-let body = document.querySelector("html");
+let body = document.querySelector("body");
 let state = 0;
 
 function toggleDarkMode() {
